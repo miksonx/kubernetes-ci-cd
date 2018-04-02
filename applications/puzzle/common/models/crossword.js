@@ -49,7 +49,7 @@ module.exports = function(Crossword) {
             var crosswordWord = crossword.words[i];
             if (crosswordWord.wordNbr === word.wordNbr && crosswordWord.wordOrientation === word.wordOrientation) {
               crosswordWord.enteredValue = word.enteredValue;
-              //crosswordWord.wordOrientation = word.wordOrientation;
+              crosswordWord.wordOrientation = word.wordOrientation;
             }
             updatedWords.push(crosswordWord);
           }
